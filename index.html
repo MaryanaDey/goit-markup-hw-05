@@ -46,7 +46,7 @@
   <section class="section-one">
         <div class="contanier">
         <h1 class="bisnes">Эффективные решения для <br>вашего бизнеса</h1>
-        <button class="sign-link" type="button">Заказать услугу</button>
+        <button class="sign-link" type="button"  data-open-modal>Заказать услугу</button>
         </div>
     </section>
 
@@ -339,7 +339,20 @@
       </div><!--la-->
       </div> <!--contanier-->
     </footer>
-    
+
+    <div class="backdrop is-hidden" data-backdrop>
+      <div class="modal">
+      <p>
+        Даша я тебя люблю.
+        Идём гулять 
+        собирайся!!!!
+    </p>
+        <button data-close-modal>Закрыть</button>
+      </div>
+    </div>
+
+
+    <script src="./js/modal.js"></script>
     
  </body>
 </html>
