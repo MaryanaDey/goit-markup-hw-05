@@ -667,21 +667,23 @@ a {
 
 .icon {
   fill: #afb1b8;
-  
   width: 20px;
   margin-right: 10px;
   margin: 0 30px;
-
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+ .icon-social:hover .icon {
+  fill: var(--while-color);
+} 
+/* 
 .card .icon:hover {
   fill: var(--while-color);
-}
-
+} */
+/* 
 .icon-team .icon:hover {
   fill: var(--while-color);
-}
+} */
 
 .card .icon-team  {
   display: flex;
