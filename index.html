@@ -14,7 +14,7 @@
 <body>
 
 <!--Шапка-->
-<header>
+<header class="page-header">
     <div class="contanier main-nav">
         <a class="logo" href="#"><span class="web">Web</span><span class="studio">Studio</span></a>
         <nav>
@@ -103,7 +103,7 @@
           <li class="work">
 
             <a  href="#"><img src="./images/box1.svg" alt="photo" width="370">
-            <div class="product-meta">
+            <div class="work-meta">
             <h2 class="sss">Десктопные приложения</h2>
             </div>
             </a>
@@ -111,15 +111,17 @@
           </li>
           <li class="work">
             <a href="#"><img src="./images/box2.svg" alt="photo" width="370">
-              <div class="product-meta">
+              <div class="work-meta">
                 <h2 class="sss">Мобильные приложения</h2>
-                </div></a>
+                </div>
+              </a>
           </li>
           <li class="work">
             <a href="#"><img src="./images/box3.svg" alt="photo" width="370">
-              <div class="product-meta">
+              <div class="work-meta">
                 <h2 class="sss">Дизайнерские решения</h2>
-                </div></a>
+                </div>
+              </a>
           </li>
         </ul>
     </div>
@@ -331,17 +333,18 @@
             <li class="icon-social"><a href="#"><svg class="icon">
               <use href="./images/icons/sprite.svg#icon-linkedinoring"></use>
             </svg></a></li>
-            
           </ul>
           
         </div><!--join-footer-->
-        
       </div><!--la-->
       </div> <!--contanier-->
     </footer>
 
-    <div class="backdrop is-hidden" data-backdrop>
+    <div class="backdrop is-hidden" data-backdrop> .
       <div class="modal">
+        <svg class="client-svg">
+          <use href="./images/clients/spriteclient.svg#icon-Client3"></use>
+       </svg>
       <p>
         Даша я тебя люблю.
         Идём гулять 
@@ -351,6 +354,13 @@
       </div>
     </div>
 
+<script>
+  const { height : pageHeaderHeight } =document
+  .querySelector(".page-header")
+  .getBoundingClientRect();
+
+  document.body.style.paddingTop = ${ pageHeaderHeight};
+</script>
 
     <script src="./js/modal.js"></script>
     
